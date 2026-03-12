@@ -1,6 +1,4 @@
-from fastapi import APIRouter, Body, Request, Response, HTTPException, status
-from fastapi.encoders import jsonable_encoder
-from typing import List
+from fastapi import APIRouter, Body, Request, HTTPException, status
 from bson import ObjectId
 
 router = APIRouter()

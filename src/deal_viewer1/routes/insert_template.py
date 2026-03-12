@@ -1,8 +1,5 @@
-from fastapi import APIRouter, Body, Request, Response, HTTPException, status
+from fastapi import APIRouter, Body, Request, status
 from fastapi.encoders import jsonable_encoder
-from typing import List
-from deal_viewer1.models.models import Template
-
 router = APIRouter()
 
 @router.post("/", response_description="Create template", status_code=status.HTTP_201_CREATED)
