@@ -1,0 +1,32 @@
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnement virtuel
+venv/
+env/
+.venv/
+
+# Fichiers de build
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Fichiers de configuration locaux
+.env
+
+# Notebook Jupyter
+.ipynb_checkpoints
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Tests / coverage
+.coverage
+htmlcov/
+.pytest_cache/

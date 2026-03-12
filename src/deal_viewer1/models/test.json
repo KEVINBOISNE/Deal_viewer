@@ -1,0 +1,16 @@
+[
+    {
+    "name": "Informations générales",
+    "fields": ["reference", "title", "clientName","status", "expectedCloseDate"]
+    },
+    {
+        "name": "Indicateurs financiers",
+        "fields": [
+            "estimatedRevenue", "estimatedMargin", "currency",
+            "financials.subtotal", "financials.discountGlobalPercent",
+            "financials.taxPercent", "financials.totalExclTax",
+            "financials.totalInclTax", "financials.estimatedCost",
+            "financials.expectedProfit"
+        ]
+    }
+]
