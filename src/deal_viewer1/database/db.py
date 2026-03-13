@@ -12,6 +12,14 @@ client = MongoClient(config["ATLAS_URI"])
 database = client[config["DB_NAME"]]
 print("Connected to the MongoDB database!")
 
+
+# def get_collection(name: str):
+#     return database[name]
+
+
+
+
+
 # @app.on_event("shutdown")
 # def shutdown_db_client():
 #     app.mongodb_client.close()
