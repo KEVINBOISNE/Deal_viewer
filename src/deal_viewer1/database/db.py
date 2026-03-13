@@ -6,12 +6,16 @@ config = dotenv_values(".env")
 
 app = FastAPI()
 
-# @app.on_event("startup")
-# def startup_db_client():
 client = MongoClient(config["ATLAS_URI"])
 database = client[config["DB_NAME"]]
 print("Connected to the MongoDB database!")
 
-# @app.on_event("shutdown")
-# def shutdown_db_client():
-#     app.mongodb_client.close()
+
+def get_collection(name: str):
+    return database[name]
+
+def init_indexes():
+    deals = get_collection("deals")
+    deals.create_index("reference", unique=True)
+
+init_indexes()
