@@ -6,7 +6,7 @@ authors = [
     {name = "KEVINBOISNE",email = "kevin.boisne@oclock.school"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "uvicorn (>=0.41.0,<0.42.0)",
     "fastapi (>=0.135.1,<0.136.0)",
